@@ -1,0 +1,21 @@
+{% extends 'entries/base.html'%}
+
+{% block content %}
+
+        <!-- Blog Post -->
+        <div class="card mb-4 mt-4">
+          <div class="card-header">
+              Create Post
+          </div>
+          <div class="card-body">
+              <form method="POST">
+                  {%csrf_token%}
+                  {{form.as_p}}
+                  <button type="submit" class="btn btn-primary">Post Only Text</button>
+              </form>
+          </div>
+        </div>
+        <!-- Pagination -->
+
+      </div>
+{% endblock %}
